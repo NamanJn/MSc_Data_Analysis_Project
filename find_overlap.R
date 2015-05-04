@@ -2,7 +2,7 @@
 
 e.set <- read.csv("raw_expression_matrix.csv",check.names=F,row.names=1)
 link <- read.csv('../data/linkIDs.csv')
-fam <- read.table('../data/US-Kawasaki-186samples-gene-expression_build37.fam')
+fam <- read.table('perperson_and_snp.fam')
 clinical <- read.csv('../data/clinical_data.csv')
 # taking o
 #yeses = subset(link_file,subset=link_file[,3] == "Yes")
@@ -23,7 +23,7 @@ needed.exp.conv <- ptr.exp.conv[ptr.overlap]
 needed.gwas <- ptr.gwas[ptr.overlap]
 needed.clinical <- ptr.clinical[ptr.overlap]
 
-# writing the 89 individuals needed.
-write.table(fam[needed.gwas,1:2],"89individuals_needed.txt",row.names=F,col.names=F)
+# writing the 88 individuals needed. this means 88 indviduals for the gene expression and 
+write.table(fam[needed.gwas,1:2],"88individuals_overlapping.txt",row.names=F,col.names=F,quote=F)
 needed_exp_set = e.set[,needed.exp.acute]
-write.csv(needed_exp_set,"89_expression_set.csv",quote=F)
+write.csv(needed_exp_set,"88_expression_set.csv",quote=F)
