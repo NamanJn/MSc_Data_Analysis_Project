@@ -7,3 +7,5 @@ plink --bfile ../data/US-Kawasaki-186samples-gene-expression_build37 --remove mi
 plink --bfile perperson --geno 0.05 --make-bed --out perperson_and_snp 
 rm perperson.*
 
+plink --bfile perperson_and_snp --maf 0.05 --make-bed --out perperson_and_snp_and_maf
+rm perperson_and_snp.*
