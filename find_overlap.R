@@ -31,10 +31,17 @@ ge_for_eqtl = cbind(geneid=rownames(needed_exp_set),needed_exp_set)
 write.table(ge_for_eqtl,"ge_for_eqtl.txt",sep="\t",quote=F,row.names=F)
 
 # writing the age and gender of the individuals for the eqtl analysis
-# still need to change M=1 and F=2, also to put the 
 
+#convert to 0 and 1s from "M" to "F"
+levels(clinical$Gender) <- c(levels(clinical$Gender), "0")
+levels(clinical$Gender) <- c(levels(clinical$Gender), "1")
+clinical$Gender[clinical$Gender == "M"] <- "0"
+clinical$Gender[clinical$Gender == "F"] <- "1"
+
+# converting months to years. It rounds to the nearest integer.
+clinical[,5] = round(clinical[,5]/12)
+
+# I am writing the file of the clinical data
 pre_clinical = t(clinical[needed.clinical,c(3,5)])
-#rownames(pre_clinical) = c("sex")
-#colnames(pre_clinical) = 1:length(pre_clinical)
 clinical_for_eqtl = cbind(id=rownames(pre_clinical),pre_clinical)
 write.table(clinical_for_eqtl,"age_and_gender.txt",sep="\t",quote=F,row.names=F)
