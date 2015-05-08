@@ -4,3 +4,9 @@
 *.Rproj
 *.swp
 .pversion
+*.bed
+*.bim
+*.fam
+*.ped
+*.nosex
+
