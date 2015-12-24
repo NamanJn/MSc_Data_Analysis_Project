@@ -11,3 +11,5 @@ plink --bfile ../overlap --extract 5snps_test_run.txt --make-bed --out 5snps
 plink --bfile 5snps --recode12 --transpose --out 5snps
 
 
+python create_eqtl_snp_file.py  
+

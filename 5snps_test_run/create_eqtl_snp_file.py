@@ -20,7 +20,7 @@ print "###############################"
 print (os.getcwd())
 #if len(sys.argv) < 3:
 #	print "please enter the output name of the file"
-bfile_name = sys.argv[1]
+#bfile_name = sys.argv[1]
 #pdb.set_trace()
 
 #transposed_file_name = "transposed"

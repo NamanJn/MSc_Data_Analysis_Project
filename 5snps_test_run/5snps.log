@@ -14,7 +14,7 @@ Recent cached web-check found... OK, v1.07 is current
 +++ PLINK 1.9 is now available! See above website for details +++ 
 
 Writing this text to log file [ 5snps.log ]
-Analysis started: Mon May  4 23:07:50 2015
+Analysis started: Sat May 16 13:36:18 2015
 
 Options in effect:
 	--bfile 5snps
@@ -46,5 +46,5 @@ After filtering, 0 males, 0 females, and 88 of unspecified sex
 Writing transposed ped file to [ 5snps.tped ] 
 Writing family information to [ 5snps.tfam ] 
 
-Analysis finished: Mon May  4 23:07:50 2015
+Analysis finished: Sat May 16 13:36:18 2015
 

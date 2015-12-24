@@ -1,0 +1,6 @@
+############################### steps to execute
+1. extract_27inds_snp.sh
+2. get_ids_from_fam.py
+3. make27.R
+4. merge_snps_to_1.sh
+5. create_separate_snp.sh
