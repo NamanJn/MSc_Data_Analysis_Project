@@ -1,0 +1,20 @@
+
+############################### genome wide association analysis quality control
+This was done by the gwas_qc.R script in the naman_scripts directory.
+
+############################### gene expressionquality control
+This was done by the clean_eset.R script in the scripts directory
+
+############################### Finding the overlapping individuals using LinkIDs.csv 
+The qcs of both GE and GWAS should be done first and then used to find the overlap.
+
+############################### order to run scripts 
+1. gwas_qc.sh # this is to clean the genome wide association scripts.
+2. eset_qc.R # this is to clean the expression data set  
+3. find_overlap.R  # This is to find the overlapping individuals and ready 
+4. create_final.sh 
+
+1. do_mds_all_individuals.sh  # This is to do the mds for all the individuals 
+2. plotmds.R # This 
+
+1. create_highchart_compatible_format.py  # this is to create a format for

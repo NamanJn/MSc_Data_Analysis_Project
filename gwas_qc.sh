@@ -5,3 +5,5 @@ plink --bfile ../data/US-Kawasaki-186samples-gene-expression_build37 --mind 0.05
 
 
 
+
+
