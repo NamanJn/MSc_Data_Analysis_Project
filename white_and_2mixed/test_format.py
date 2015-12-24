@@ -9,11 +9,6 @@ ee = execfile;
 selfdir = os.path.dirname(poing);
 os.chdir(selfdir);
 
-# start here..
-samps = "This is sparta";
-sampl = ["Elon","Musk","Steve","Jurvetson"];
-sampd = {"Python":"is Great","Tesla":"Motors"};
-
 
 openfile = open("27ge_for_eqtl.txt")
 readfile = openfile.read()

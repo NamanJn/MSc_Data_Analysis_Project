@@ -1,0 +1,13 @@
+
+############################### zee_snps_for_eqtl
+
+* The zee_snps_for_eqtl file was made to test whether MatrixEQTL accepts NA values.
+Check the 5th snp in that file, it contains a NA.
+
+* I ran the eqtl with the 5snps without any error.
+
+############################### example_eqtl.R
+
+This file is to be run for the eqtl_analysis.
+It requires 3 files. The snp file, the GE (Gene expression file), and the 
+age_gender_file.txt
